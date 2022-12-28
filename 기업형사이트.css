@@ -1,0 +1,553 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.header {
+    height: 145px;
+    text-align: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid #999;
+}
+.header .login{
+  float: right;
+  font-size: 20px;
+  margin: 15px;
+}
+
+
+
+
+
+.header_logo img:hover{
+  width:100px;
+  height:100px;
+  transform:scale(1.5);
+  transition: transform.5s;
+}
+
+.product-list img:hover{
+  width:200px;
+  height:300px;
+  transform:scale(1.5);
+  transition: transform.5s;
+}
+
+.sale-list img:hover{
+  width:270px;
+  height:150px;
+  transform:scale(1.5);
+  transition: transform.5s;
+}
+
+
+img:hover{
+  width:300px;
+  height:300px;
+  transform:scale(1.5);
+  transition: transform.5s;
+}
+
+.header_logo img {
+  border-radius: 10px;
+  float: left;
+  margin-left: 500px;
+  list-style-image: none;
+}
+.header_logo h1 {
+    font: bold 40px 'arial';
+    padding-top: 14px;
+    letter-spacing: 2px;
+    margin-right: 600px ;
+}
+
+.header_logo p {
+    font: bold 12px 'arial';
+    letter-spacing: 2px;
+    margin-top: -1px;
+    margin-right: 600px;
+} 
+
+.header_gnb ul {
+    margin-top: 39px;
+}
+.header_gnb ul li{
+    display: inline-block;
+}
+
+.header_gnb ul li a {
+    display: block;
+    font: bold 14px 'arial';
+    color: #999;
+    margin: 0px 16px;
+    letter-spacing: 1px;
+}
+.sp_h1 {
+    width: 20px;
+    height: 20px;
+}
+
+li{
+    list-style-type: none;
+  }
+  
+  #slideShow li img {
+    width: 300px;
+    height: 300px;
+  }
+
+  /* 보여줄 구간의 높이와 넓이 설정 */
+  #slideShow{
+    width: 500px;
+    height: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    margin: 50px auto;
+    overflow: hidden;   
+    /*리스트 형식으로 이미지를 일렬로 
+    정렬할 것이기 때문에, 500px 밖으로 튀어 나간 이미지들은
+    hidden으로 숨겨줘야됨*/
+  }
+  
+  
+  .slides{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2500px; /* 슬라이드할 사진과 마진 총 넓이 */
+    transition: left 0.5s ease-out; 
+    /*ease-out: 처음에는 느렸다가 점점 빨라짐*/
+  }
+  
+  /* 첫 번째 슬라이드 가운데에 정렬하기위해
+  첫번째 슬라이드만 margin-left조정 */
+  .slides li:first-child{
+    margin-left: 100px;
+  }
+  
+  /* 슬라이드들 옆으로 정렬 */
+  .slides li:not(:last-child){
+    float: left;
+    margin-right: 100px;
+  }
+  
+  .slides li{
+    float: left;
+  }
+  
+  .controller span{
+    position:absolute;
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    border-radius: 50%;
+    padding: 10px 20px;
+    top: 50%;
+    font-size: 1.3em;
+    cursor: pointer;
+  }
+  
+  /* 이전, 다음 화살표에 마우스 커서가 올라가 있을때 */
+  .controller span:hover{
+    background-color: rgba(128, 128, 128, 0.11);
+  }
+  
+  .prev{
+    left: 10px;
+  }
+  
+  /* 이전 화살표에 마우스 커서가 올라가 있을때 
+  이전 화살표가 살짝 왼쪽으로 이동하는 효과*/
+  .prev:hover{
+    transform: translateX(-10px);
+  }
+  
+  .next{
+    right: 10px;
+  }
+  
+  /* 다음 화살표에 마우스 커서가 올라가 있을때 
+  이전 화살표가 살짝 오른쪽으로 이동하는 효과*/
+  .next:hover{
+    transform: translateX(10px);
+  }
+ 
+
+
+
+
+
+  .products h3{
+    font-size: 50px;
+    color: #545454;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 70px;
+    text-align: center;
+  }
+  .img1 {
+    border-radius: 20px;
+  }
+  .product-list{
+    width: 900px;
+    padding-left: 85px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .product{
+    width: 250px;
+    text-align: center;
+    display: block;
+    color: #545454;
+    text-decoration: none;
+    float: left;
+    margin-left:10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+  }
+  .product1{
+    width: 250px;
+    text-align: center;
+    display: block;
+    color: #545454;
+    text-decoration: none;
+    float: left;
+    margin-left:10px;
+    margin-right: 10px;
+    margin-bottom: 80px;
+  }
+  .product2{
+    width: 250px;
+    text-align: center;
+    display: block;
+    color: #545454;
+    text-decoration: none;
+    float: left;
+    margin-left:10px;
+    margin-right: 10px;
+    margin-bottom: 150px;
+  }
+  
+  .product-name{
+    margin-top: 20px;
+    margin-bottom: 4px;
+    font-size: 20px;
+  }
+  .product-price {
+    font-weight: bold;
+  }
+
+
+
+  h2{
+    font-size: 50px;
+    color: #fd0000;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 10px  ;
+    text-align: center;
+  }
+  .sale-price {
+    font-weight: bold;
+  }
+
+  .sale img {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  .sale-list{
+    width: 1100px;
+    padding-left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sale{
+    width: 250px;
+    text-align: center;
+    text-decoration: none;
+    float: left;
+    margin-left:10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+  }
+  .sale1{
+    width: 250px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    float: left;
+    margin-left:10px;
+    margin-right: 10px;
+    margin-bottom: 80px;
+  }
+  .sale2{
+    width: 250px;
+    text-align: center;
+    display: block;
+    color: #7c7b7b;
+    text-decoration: none;
+    float: left;
+    margin-left:10px;
+    margin-right: 10px;
+    margin-bottom: 150px;
+  }
+  
+  .sale-name{
+    margin-top: 20px;
+    margin-bottom: 4px;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+  }
+  
+
+
+
+
+
+  .clearfix{
+    clear: both;
+  }
+
+
+  footer {
+    width: 100%;
+    height: 110px; /* 내용물에 따라 알맞는 값 설정 */
+    bottom: 0px;
+    position: absolute;
+  }
+
+  section {
+    padding-bottom: 110px; /* footer의 height값과 동일 */
+    background-color: #f5f1f1;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #wrap {
+    position: relative;
+    width: 100%; 
+    background-color: #f2f2f2;
+  }
+  
+  
+  footer {
+    width: 100%;
+    height: 90px;
+    bottom: 0px;
+    position: absolute;
+    border-top: 1px solid #c4c4c4;
+    padding-top: 15px;
+    color: #808080;
+    font-size: 11px;
+  }
+  
+  footer a {
+    display: inline-block;
+    margin: 0 20px 10px 20px;
+    color: #808080; font-size: 11px;
+  }
+  
+  footer a:visited {
+    color: #808080;
+  }
+  
+  footer p {
+    margin-top: 0; margin-bottom: 0;   
+  }
+  
+  footer p span {
+    display: inline-block;
+    margin-left: 20px;
+  }
+
+
+
+
+
+
+
+.gg{
+  float: right;
+  display: block;
+  overflow: hidden;
+  width: 300px;
+  height: 700px;
+  background-color: rgb(117, 117, 117);
+  color: #fff;
+  transition: all 0.5s ease;
+  border-radius: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-left: 1600px;
+  position: fixed;
+  top: 150px;
+}
+
+
+
+
+.menu {
+  float: left;
+  display: block;
+  overflow: hidden;
+  width: 200px;
+  height: 600px;
+  background-color: #000;
+  color: #fff;
+  transition: all 0.5s ease;
+  border-radius: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 150px;
+}
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu a, .menu > label {
+  display: block;
+  height: 25px;
+  padding: 8px;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #000;
+}
+.menu ul li:hover, .menu > label:hover {
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+}
+.menu div {
+  position: absolute;
+  left: 50px;
+  line-height: 1.5;
+  font-size: 1em;
+  font-family: 'Noto Sans KR';
+  padding: 0 0 0 20px;
+}
+.menu .item {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+#expand-menu {
+  display: none;
+}
+#expand-menu:checked ~ ul {
+  display: block;
+  height: auto;
+}
+
+.menu ::before {
+  font-family: 'Material Icons';
+  font-size: 1.5em;
+  float: left;
+  clear: left;
+}
+
+
+
+
+.menu {
+  display: block;
+  overflow: hidden;
+  width: 200px;
+  height: 600px;
+  background-color: #000;
+  color: #fff;
+  transition: all 0.5s ease;
+  border-radius: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 150px;
+}
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu a, .menu > label {
+  display: block;
+  height: 25px;
+  padding: 8px;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #000;
+}
+.menu ul li:hover, .menu > label:hover {
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+}
+.menu div {
+  position: absolute;
+  left: 50px;
+  line-height: 1.5;
+  font-size: 1em;
+  font-family: 'Noto Sans KR';
+  padding: 0 0 0 20px;
+}
+.menu .item {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+#expand-menu {
+  display: none;
+}
+#expand-menu:checked ~ ul {
+  display: block;
+  height: auto;
+}
+
+.menu ::before {
+  font-family: 'Material Icons';
+  font-size: 1.5em;
+  float: left;
+  clear: left;
+}
+.menu label::before{ content: '\e5d2'; }
+.menu li:nth-child(1) a::before{ content: '\f02e'; }
+.menu li:nth-child(2) a::before{ content: '\e8d6'; }
+.menu li:nth-child(3) a::before{ content: '\e88a'; }
+.menu li:nth-child(4) a::before{ content: '\e8cc'; }
+.menu li:nth-child(5) a::before{ content: '\e87d'; }
+.menu li:nth-child(6) a::before{ content: '\e8b8'; }
+
+@media screen and (max-width:1023px) {
+  .menu {
+      width: 60px;
+  }
+}
+@media screen and (max-width:560px) {
+  .menu #expand-menu:not(:checked) ~ ul {
+      display: none;
+  }
+}
+
+@media (max-width:1730px){ 
+  * {
+    display: none;
+    
+    
+  }
+}
